@@ -12,6 +12,17 @@ html {
 	padding: 0;
 }
 
+.main-article {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	border-radius: 0.9rem;
+	margin: 1.2rem;
+}
+
+.main-article img  {
+	height: 25rem;
+}
 nav {
 	display: flex;
 	flex-direction: row-reverse;
@@ -83,6 +94,7 @@ main {
 	height: 5px;
 	background-color: black;
 	margin: 6px 0;
+	position: fixed;
 }
 
 .title-recent {
@@ -107,3 +119,5 @@ main {
 .card-title {
 	margin: 0.6rem;
 }
+
+

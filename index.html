@@ -12,14 +12,24 @@
 <body>
     <header>
         <nav>
-            <img src="Ressources/Images/all4tech_1.png" />
-            <ul>
-                <li><a href="#"></a>section1</li>
-                <li><a href="#"></a>section2</li>
-                <li><a href="#"></a>section3</li>
-                <li><a href="#"></a>section4</li>
-                <li><a href="#"></a>section5</li>
-            </ul>
+            <img src="Ressources/Images/all4tech_1.png" id="logo" />
+            <div class="sidenav" id="mySidenav">
+                <a id="closeBtn" href="#" class="close">&times;</a>
+                <ul>
+                    <li><a href="#"></a>section1</li>
+                    <li><a href="#"></a>section2</li>
+                    <li><a href="#"></a>section3</li>
+                    <li><a href="#"></a>section4</li>
+                    <li><a href="#"></a>section5</li>
+                </ul>
+            </div>
+            <a href="#" id="openBtn">
+                <span class="burger-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </a>
         </nav>
     </header>
     <main>
@@ -77,6 +87,7 @@
         <p><a href="#">Github Repo</a></p>
         <p><a href="#">Contact</a></p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,97 +1,129 @@
-    @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap');
 
-
-    * {
-        box-sizing: border-box;
-    }
-
-    body,
-    html {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0.5rem 1rem;
-    }
-
-    #logo {
-        width: 15%;
-        height: 15%;
-    }
-
-    /* Sidenav menu */
-    .sidenav {
-        height: 100%;
-        width: 15rem;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: -20rem;
-        background-color: #e8e8e8;
-        padding-top: 60px;
-        transition: left 0.5s ease;
-    }
-
-    .sidenav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    /*Sidenav menu links */
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-        color: #111;
-    }
-
-    /* Active class */
-    .sidenav.active {
-        left: 0;
-    }
-
-    /* Close btn */
-    .sidenav .close {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-    }
-
-    .burger-icon span {
-        display: block;
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        margin: 6px 0;
-    }
-
-
-    /*ul {
- display: flex;
- flex-direction: row;
- justify-content:space-around;
- padding: 0;
+* {
+	box-sizing: border-box;
 }
 
-li {
-    list-style: none; 
-   }
+body,
+html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
+.main-article {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	border-radius: 0.9rem;
+	margin: 1.2rem;
+}
+
+.main-article img  {
+	height: 25rem;
+}
+nav {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0.5rem 1rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#logo {
+	width: 15%;
+	height: 15%;
+}
+
+/* Sidenav menu */
+.sidenav {
+	height: 100%;
+	width: 15rem;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: -20rem;
+	background-color: #e8e8e8;
+	padding-top: 60px;
+	transition: left 0.5s ease;
+}
+
+.sidenav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+/*Sidenav menu links */
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #111;
+}
+
+/* Active class */
+.sidenav.active {
+	left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+}
+
+.burger-icon span {
+	display: block;
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+	position: fixed;
+}
+
+.title-recent {
+	margin: 0 1.2rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	border-radius: 0.9rem;
+	margin: 1.2rem;
+}
+
+.recent-img {
+	object-fit: cover;
+	align-self: center;
+	width: 100%;
+	border-radius: 0.9rem 0.9rem 0 0;
+}
+
+.card-title {
+	margin: 0.6rem;
+}
+
+
+<<<<<<< HEAD
 a {
     text-decoration: none;
 } */
+=======
+>>>>>>> 60755dd964527fd2d376a1816c2d359172758f9b

@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "validate": "html-validator docs/*.html flyer.html",
+    "one-folder": "html-validator docs",
+    "all": "html-validator --quiet"
+  },
+  "type": "module",
   "devDependencies": {
     "w3c-html-validator": "^1.2.1"
   }

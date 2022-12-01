@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "w3c-html-validator": "^1.2.1"
+  }
+}

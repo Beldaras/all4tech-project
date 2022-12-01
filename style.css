@@ -20,7 +20,7 @@ html {
 	margin: 1.2rem;
 }
 
-.main-article img  {
+.main-article img {
 	height: 25rem;
 }
 nav {
@@ -121,7 +121,5 @@ main {
 }
 
 a {
-    text-decoration: none;
-} */
-=======
->>>>>>> 60755dd964527fd2d376a1816c2d359172758f9b
+	text-decoration: none;
+}

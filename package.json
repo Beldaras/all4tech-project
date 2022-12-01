@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "validate": "html-validator docs/*.html flyer.html",
-    "one-folder": "html-validator docs",
+    "validate": "html-validator --quiet",
     "all": "html-validator --quiet"
   },
   "type": "module",

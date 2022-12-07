@@ -2,8 +2,8 @@
 
 const menuBurger = document.querySelector('.menu-burger');
 const navLinks = document.querySelector('.nav-links');
-const openBtn = 'menu-btn.png';
-const closeBtn = 'close-menu-btn.png';
+const openBtn = '/Ressources/Images/menu-btn.png';
+const closeBtn = '/Ressources/Images/close-menu-btn.png';
 
 menuBurger.addEventListener('click', () => {
 	navLinks.classList.toggle('mobile-menu');
@@ -15,24 +15,41 @@ menuBurger.addEventListener('click', () => {
 });
 
 /* Mobile slideshos */
-var slideIndex = 1;
-showDivs(slideIndex);
+// var slideIndex = 1;
+// showDivs(slideIndex);
 
-function plusDivs(n) {
-	showDivs((slideIndex += n));
-}
+// function plusDivs(n) {
+// 	showDivs((slideIndex += n));
+// }
 
-function showDivs(n) {
-	var i;
-	var x = document.getElementsByClassName('slideshow');
-	if (n > x.length) {
-		slideIndex = 1;
-	}
-	if (n < 1) {
-		slideIndex = x.length;
-	}
-	for (i = 0; i < x.length; i++) {
-		x[i].style.display = 'none';
-	}
-	x[slideIndex - 1].style.display = 'block';
-}
+// function showDivs(n) {
+// 	var i;
+// 	var x = document.getElementsByClassName('slideshow');
+// 	if (n > x.length) {
+// 		slideIndex = 1;
+// 	}
+// 	if (n < 1) {
+// 		slideIndex = x.length;
+// 	}
+// 	for (i = 0; i < x.length; i++) {
+// 		x[i].style.display = 'none';
+// 	}
+// 	x[slideIndex - 1].style.display = 'block';
+// }
+
+// carousel
+
+const slidesContainer = document.getElementById('slides-container');
+const slide = document.querySelector('.slide');
+const prevButton = document.getElementById('slide-arrow-prev');
+const nextButton = document.getElementById('slide-arrow-next');
+
+nextButton.addEventListener('click', () => {
+	const slideWidth = slide.clientWidth;
+	slidesContainer.scrollLeft += slideWidth;
+});
+
+prevButton.addEventListener('click', () => {
+	const slideWidth = slide.clientWidth;
+	slidesContainer.scrollLeft -= slideWidth;
+});

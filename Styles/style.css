@@ -32,6 +32,11 @@ html {
 
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 main {
 	margin: calc(2 * var(--spacing)) 0;
 }
@@ -570,12 +575,12 @@ a {
 	flex-direction: row;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
-	margin: calc(2*var(--spacing)) calc(var(--spacing))
+	width: 100%;
 
 }
 
 .category-title {
-	margin: calc(3*var(--spacing)) calc(3* var(--spacing)) 0 calc(3*var(--spacing)) ;
+	margin: calc(3*var(--spacing)) 0 calc(3*var(--spacing)) ;
 }
 
 
@@ -595,6 +600,11 @@ a {
 	max-width: none;
 	
 
+}
+
+footer {
+	position: fixed;
+	width: 100%;
 }
 
 }

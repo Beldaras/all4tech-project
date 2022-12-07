@@ -228,7 +228,6 @@ a {
 }
 
 @media screen and (min-width: 600px) {
-
 	header {
 		height: 9.625rem;
 	}
@@ -251,7 +250,6 @@ a {
 		justify-content: center;
 		align-items: center;
 		height: 100%;
-
 	}
 
 	section {
@@ -269,8 +267,6 @@ a {
 		height: 40rem;
 		margin: 1rem;
 		align-self: center;
-
-
 	}
 
 	.main-article {
@@ -280,7 +276,6 @@ a {
 		width: 100%;
 		height: 100%;
 		align-self: center;
-
 	}
 
 	.home-main-article {
@@ -313,13 +308,11 @@ a {
 		display: flex;
 		width: 100%;
 		height: 100%;
-
 	}
 
 	.home-main-article-title {
 		font-size: 8rem;
 		text-align: center;
-
 	}
 
 	.home-main-article-text {
@@ -344,7 +337,6 @@ a {
 
 	.card {
 		width: 31%;
-
 	}
 
 	.recent-img {
@@ -385,8 +377,6 @@ a {
 	.most-read li {
 		margin: 0 0.5rem 0.5rem 0;
 	}
-
-
 
 	/* main article page */
 
@@ -441,7 +431,6 @@ a {
 		font-family: var(--font-content);
 	}
 
-
 	/* carousel */
 
 	.slider-wrapper {
@@ -450,6 +439,7 @@ a {
 		position: relative;
 		overflow: hidden;
 		align-self: center;
+		order: 3;
 	}
 
 	.slides-container {
@@ -525,4 +515,3 @@ a {
 		background-color: #da6f2b;
 	}
 }
-

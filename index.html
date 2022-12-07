@@ -1,115 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>All4tech Homepage</title>
-	<link rel="stylesheet" href="/Styles/style-navbar.css" />
-	<link rel="stylesheet" href="/Styles/style.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous" />
-</head>
-
-<body>
-	<header>
-		<nav class="navbar">
-			<a href="/">
-				<img src="/Ressources/Images/all4tech_1.png" alt="logo" class="logo" />
-			</a>
-			<div class="nav-links">
-				<ul>
-					<li class="active"><a href="/">Home</a></li>
-					<li><a href="/Screens/programming.html">Programming</a></li>
-					<li><a href="/Screens/hardware.html">Hardware</a></li>
-					<li><a href="/Screens/business.html">Business</a></li>
-					<li><a href="/Screens/games.html">Games</a></li>
-				</ul>
-			</div>
-			<img src="/Ressources/Images/menu-btn.png" alt="menu burger" class="menu-burger" />
-		</nav>
-	</header>
-	<main>
-		<section class="image-hover">
-			<div class="home-main-article">
-				<img class="recent-img" id="main-img" src="Ressources/Images/category.jpg" alt="Hot air balloon" />
-				<article class="home-main-article-content">
-					<h1 class="home-main-article-title">Ipsum</h1>
-					<p class="home-main-article-text">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Reprehenderit ab suscipit, voluptatem amet consectetur, ut tenetur
-						sit consequatur odio repudiandae quisquam sed animi pariatur!
-						Sequi magnam assumenda officia facilis nesciunt!
-					</p>
-				</article>
-			</div>
-		</section>
-		<h2 class="title-recent">Recent</h2>
-		<section id="recent-article">
-			<div class="card">
-				<img class="recent-img" src="/Ressources/Images/composant.jpg" alt="Hot air balloons" />
-				<h2 class="card-title">Title</h2>
-			</div>
-			<div class="card">
-				<img class="recent-img" src="/Ressources/Images/composant.jpg" alt="Hot air balloons" />
-				<h2 class="card-title">Title</h2>
-			</div>
-			<div class="card">
-				<img class="recent-img" src="/Ressources/Images/composant.jpg" alt="Hot air balloons" />
-				<h2 class="card-title">Title</h2>
-			</div>
-		</section>
-		<section id="carrousel">
-			<article>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore
-				dolorum fugit iste similique blanditiis amet.
-			</article>
-			<article>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-				deserunt, at eligendi rem ducimus assumenda cupiditate libero?
-			</article>
-			<article>
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi id
-				commodi ipsa ad obcaecati
-			</article>
-			<article>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-				voluptatibus voluptatem.
-			</article>
-			<article>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a
-				voluptate recusandae commodi ut expedita, harum debitis excepturi
-			</article>
-		</section>
-		<section id="random-mostRead">
-			<div class="article-random">
-				<img src="Ressources/Images/pexels-thisisengineering-3861969.jpg" alt="illustration article random">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vero
-				atque excepturi! Aspernatur quis tempora pariatur dolorem. Provident
-				quisquam aliquid culpa fugit ut aut voluptas quis molestiae incidunt
-				velit! Eaque?
-			</div>
-			<div class="most-read">
-				<ul>
-					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-					<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-				</ul>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<p><a href="#alltech">© All4Tech 2022</a></p>
-		<p><a href="#">About</a></p>
-		<p><a href="#">Github Repo</a></p>
-		<p><a href="#">Contact</a></p>
-	</footer>
-	<script src="script.js"></script>
-	<script src="W3C-validate.js"></script>
-</body>
-
-</html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>All4tech Homepage</title>
+		<link rel="stylesheet" href="/Styles/style-navbar.css" />
+		<link rel="stylesheet" href="/Styles/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+			crossorigin="anonymous"
+		/>
+	</head>
 
 	<body>
 		<header>
@@ -143,7 +46,7 @@
 					<img
 						class="recent-img"
 						id="main-img"
-						src="/Ressources/Images/composant.jpg"
+						src="Ressources/Images/category.jpg"
 						alt="Hot air balloon"
 					/>
 					<article class="home-main-article-content">
@@ -156,6 +59,18 @@
 						</p>
 					</article>
 				</div>
+			</section>
+			<section class="slider-wrapper">
+				<button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+
+				<button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+
+				<ul class="slides-container" id="slides-container">
+					<li class="slide"></li>
+					<li class="slide"></li>
+					<li class="slide"></li>
+					<li class="slide"></li>
+				</ul>
 			</section>
 			<h2 class="title-recent">Recent</h2>
 			<section id="recent-article">
@@ -184,20 +99,34 @@
 					<h2 class="card-title">Title</h2>
 				</div>
 			</section>
-			<section class="slider-wrapper">
-				<button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
-
-				<button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
-
-				<ul class="slides-container" id="slides-container">
-					<li class="slide"></li>
-					<li class="slide"></li>
-					<li class="slide"></li>
-					<li class="slide"></li>
-				</ul>
+			<section id="carrousel">
+				<article>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore
+					dolorum fugit iste similique blanditiis amet.
+				</article>
+				<article>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+					deserunt, at eligendi rem ducimus assumenda cupiditate libero?
+				</article>
+				<article>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi id
+					commodi ipsa ad obcaecati
+				</article>
+				<article>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+					voluptatibus voluptatem.
+				</article>
+				<article>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a
+					voluptate recusandae commodi ut expedita, harum debitis excepturi
+				</article>
 			</section>
 			<section id="random-mostRead">
 				<div class="article-random">
+					<img
+						src="Ressources/Images/pexels-thisisengineering-3861969.jpg"
+						alt="illustration article random"
+					/>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vero
 					atque excepturi! Aspernatur quis tempora pariatur dolorem. Provident
 					quisquam aliquid culpa fugit ut aut voluptas quis molestiae incidunt
@@ -222,4 +151,3 @@
 		<script src="W3C-validate.js"></script>
 	</body>
 </html>
-

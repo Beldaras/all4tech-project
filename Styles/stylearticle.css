@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;500;600;700&family=Inter:wght@400;700&family=Nunito+Sans:wght@300;400;700&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -8,7 +8,9 @@
     --spacing: 1rem;
     --title-color: #272932;
     --text-color: #30336B;
+	--light: #fbfaff;
     --background-color: #81B29A;
+	--background-article: #EBE4F1;
     --font-title: "Specimen", sans-serif;
     --font-content: "Arvo", serif;
 	--font-footer: "Nunito Sans", sans-serif; 
@@ -24,6 +26,7 @@ html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
+	background-color: var(--light);
 }
 
 
@@ -98,6 +101,10 @@ ul {
 	list-style: none;
 }
 
+main {
+	margin: calc(2* var(--spacing)) 0;
+ }
+
 /* Article */
 
 .article1 {
@@ -109,38 +116,59 @@ ul {
 
 .article1 h1 {
     font-family: var(--font-title);
-    text-align: center;
+	font-size: 1.5rem;
+	font-weight: bolder;
+	text-align: center;
+	color: var(--title-color);
+	line-height: 1.5;
+	max-width: 70ch;
+
 }
 .article1 p {
     font-family: var(--font-content);
     width: 90%;
     margin: var(--spacing);
+	max-width: 70ch;
+	line-height: 1.5;
+	line-break: 2.5;
+	color: var(--text-color);
+	font-weight: 500;
+	text-align: justify;
 }
 
 .container-imgp {
-    background-color: #EBE4F1;
+    background-color: hsl(267.7,31.7%,92%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: var(--spacing);
+	box-shadow: var(--background-article) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	border-radius: calc(2*var(--spacing));
+	
 }
 .article1-image {
     width: 90%;
+	border-radius: calc(2*var(--spacing));
+
 }
 
 /* Mobile Slideshow */
 .mobile-slideshow {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+	display: flex;
+	align-items: center;
+	overflow-y: hidden;
+	overflow-x:scroll;
+	height: 50vw; 
+	max-height: 100vh;
+	margin: calc(2.5 * var(--spacing)) calc(2 * var(--spacing));
+	border-radius: 1rem;
+	box-shadow: var(--background-article) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 }
 
-
 .slideshow {
-    width: 50%;
-    height: auto;
+ 	width: 50%;
 }
 
 
@@ -149,7 +177,6 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	background-color: var(--background-color);
-	border-radius: 0.5rem 0.5rem 0 0;
 	font-family: var(--font-footer);
     bottom: 0;
 	
@@ -158,6 +185,7 @@ footer {
 footer a {
 	color: white;
 	font-weight: bold;
+	text-decoration: none;
 }
 
 footer a:hover {

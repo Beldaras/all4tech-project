@@ -18,6 +18,21 @@ closeBtn.onclick = closeNav;
 
 */
 
+const menuBurger = document.querySelector('.menu-burger');
+const navLinks = document.querySelector('.nav-links');
+const openBtn = 'menu-btn.png';
+const closeBtn = 'close-menu-btn.png';
+
+menuBurger.addEventListener('click', () => {
+	navLinks.classList.toggle('mobile-menu');
+	if ([...navLinks.classList].includes('mobile-menu')) {
+		document.querySelector('.menu-burger').src = closeBtn;
+	} else {
+		document.querySelector('.menu-burger').src = openBtn;
+	}
+});
+
+
 
 /* Mobile slideshos */
 var slideIndex = 1;

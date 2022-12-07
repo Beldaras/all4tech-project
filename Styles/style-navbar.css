@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;500;600;700&family=Nunito+Sans:wght@300;400;700&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +10,8 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Poppins';
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
 }
 
 body {
@@ -19,7 +22,7 @@ body {
 header {
 	height: 100%;
 	width: 100%;
-	background-color: #111;
+	background-color: #fbfaff;
 }
 
 .navbar {
@@ -34,7 +37,7 @@ header {
 }
 
 .navbar a {
-	color: #fff;
+	color: black;
 	font-size: 1.1rem;
 	/* font-weight: 200; */
 }
@@ -73,7 +76,7 @@ footer {
 	justify-content: space-around;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 	.navbar {
 		padding: 0;
 	}

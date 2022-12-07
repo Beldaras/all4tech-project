@@ -11,7 +11,7 @@
 :root {
 	--spacing: 1rem;
 	--title-color: #272932;
-	--text-color: #30336b;
+	--text-color: #303363b;
 	--light: #fbfaff;
 	--background-color: #81b29a;
 	--background-article: #ebe4f1;
@@ -23,7 +23,8 @@
 body,
 html {
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
+	height: inherit;
 	margin: 0;
 	padding: 0;
 	background-color: rgba(237, 237, 248, 0.1);
@@ -53,6 +54,7 @@ main {
 	line-height: 1.5;
 	max-width: 70ch;
 }
+
 .article1 p {
 	font-family: var(--font-content);
 	width: 90%;
@@ -76,6 +78,7 @@ main {
 		rgba(0, 0, 0, 0.23) 0px 3px 6px;
 	border-radius: calc(2 * var(--spacing));
 }
+
 .article1-image {
 	width: 90%;
 	border-radius: calc(2 * var(--spacing));
@@ -230,15 +233,42 @@ a {
 	font-size: 1.3rem;
 }
 
+.slide-arrow {
+	display: none;
+}
+
 @media screen and (min-width: 600px) {
-	/* checker si on peut suppr et .main
+
+	header {
+		height: 9.625rem;
+	}
+
+	.head {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-image: url(/Ressources/Images/category.jpg);
+		width: 70%;
+		height: 12rem;
+		margin: 0 auto;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
 
 
 	main {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-	}*/
+
+		align-items: center;
+		height: 100%;
+	}
+
+	section {
+		position: relative;
+	}
+
 
 	/* home main article */
 
@@ -248,50 +278,84 @@ a {
 		order: 1;
 		justify-content: center;
 		width: 90%;
-		height: 20rem;
+		height: 40rem;
 		margin: 1rem;
 		align-self: center;
-		position: relative;
-		background-image: url('Ressources/balloons.jpg');
+	}
+
+	.main-article {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		align-self: center;
 	}
 
 	.home-main-article {
-		position: absolute;
-		z-index: 1;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		position: relative;
 	}
 
 	.home-main-article-content {
-		visibility: hidden;
+		position: absolute;
+		left: 5rem;
+		right: 5rem;
+		top: 10rem;
+		opacity: 0;
+		transition: 0.5s;
+		z-index: 2;
+		color: var(--light);
 	}
 
-	.image-hover:hover .main-article {
-		visibility: visible;
+	.home-main-article:hover #main-img {
+		opacity: 0.5;
+	}
+
+	.home-main-article:hover .home-main-article-content {
+		opacity: 1;
 	}
 
 	#main-img {
-		display: none;
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+
+	.home-main-article-title {
+		font-size: 8rem;
+		text-align: center;
+	}
+
+	.home-main-article-text {
+		font-size: 3rem;
+		text-align: center;
 	}
 
 	/* recent article section */
 
 	.title-recent {
-		margin: 0.5rem;
+		align-self: start;
+		margin: 0 0 0.5rem 7rem;
+		font-size: 3rem;
 	}
 
 	#recent-article {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
-		width: 100%;
+		justify-content: space-between;
+		width: 90%;
 	}
 
 	.card {
-		width: 28%;
-		margin: 0;
+		width: 31%;
 	}
 
 	.recent-img {
 		width: 100%;
+		height: 15rem;
 	}
 
 	/*Random and most read articles section */
@@ -299,20 +363,22 @@ a {
 	#random-mostRead {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		margin: 1rem;
 		order: 3;
+		height: 30rem;
+		width: 90%;
 	}
 
 	.article-random {
 		display: flex;
-		width: 50%;
+		width: 60%;
 		height: 100%;
 	}
 
 	.most-read {
 		display: flex;
-		width: 15%;
+		width: 35%;
 		align-self: flex-end;
 	}
 
@@ -324,30 +390,6 @@ a {
 
 	.most-read li {
 		margin: 0 0.5rem 0.5rem 0;
-	}
-
-	/* main article */
-
-	.main-article {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		width: 90%;
-		height: 20rem;
-		align-self: center;
-		background-image: url('Ressources/balloons.jpg');
-	}
-
-	.main-article-content {
-		visibility: hidden;
-	}
-
-	.main-article:hover .main-article-text {
-		visibility: visible;
-	}
-
-	#main-img {
-		display: none;
 	}
 
 	/* main article page */
@@ -434,6 +476,91 @@ a {
 	}
 
 
+	/* carousel */
+
+	.slider-wrapper {
+		margin: 1rem;
+		width: 90%;
+		position: relative;
+		overflow: hidden;
+		align-self: center;
+		order: 3;
+	}
+
+	.slides-container {
+		height: calc(45vh - 1rem);
+		width: 100%;
+		display: flex;
+		overflow: scroll;
+		scroll-behavior: smooth;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.slides-container::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
+
+	.slide-arrow {
+		position: absolute;
+		display: flex;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		height: 4rem;
+		background-color: white;
+		border: none;
+		width: 2rem;
+		font-size: 3rem;
+		padding: 0;
+		cursor: pointer;
+		opacity: 0.5;
+		transition: opacity 100ms;
+	}
+
+	.slide-arrow:hover,
+	.slide-arrow:focus {
+		opacity: 1;
+	}
+
+	#slide-arrow-prev {
+		left: 0;
+		padding-left: 0.25rem;
+		border-radius: 0 2rem 2rem 0;
+	}
+
+	#slide-arrow-next {
+		right: 0;
+		padding-left: 0.75rem;
+		border-radius: 2rem 0 0 2rem;
+	}
+
+	.slide {
+		width: 100%;
+		height: 100%;
+		flex: 1 0 100%;
+	}
+
+	.slide:nth-child(1) {
+		background-color: #49b293;
+	}
+
+	.slide:nth-child(2) {
+		background-color: #b03532;
+	}
+
+	.slide:nth-child(3) {
+		background-color: #6a478f;
+		margin: 0;
+	}
+
+	.slide:nth-child(4) {
+		background-color: #da6f2b;
+	}
+
+
 
 
 	/* Categories pages desktop */
@@ -444,6 +571,7 @@ a {
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	margin: calc(2*var(--spacing)) calc(var(--spacing))
+
 }
 
 .category-title {

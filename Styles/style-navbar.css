@@ -37,7 +37,11 @@ header {
 }
 
 .navbar a {
+
+	position: relative;
+
 	color: black;
+
 	font-size: 1.1rem;
 	/* font-weight: 200; */
 }

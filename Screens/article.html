@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="/Styles/stylearticle.css" />
+		<link rel="stylesheet" href="/Styles/style.css" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
@@ -14,20 +14,28 @@
 	</head>
 	<body>
 		<header>
-			<nav>
-				<img src="../Ressources/Images/all4tech_1.png" id="logo" />
-				<div class="dropdown">
-					<button class="dropbtn">
-						<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
-					</button>
-					<ul class="dropdown-content">
-						<li><a href="#"></a>section1</li>
-						<li><a href="#"></a>section2</li>
-						<li><a href="#"></a>section3</li>
-						<li><a href="#"></a>section4</li>
-						<li><a href="#"></a>section5</li>
+			<nav class="navbar">
+				<a href="index.html">
+					<img
+						src="/Ressources/Images/all4tech_1.png"
+						alt="logo"
+						class="logo"
+					/>
+				</a>
+				<div class="nav-links">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="/Screens/programming.html">Programming</a></li>
+						<li><a href="/Screens/hardware.html">Hardware</a></li>
+						<li><a href="/Screens/business.html">Business</a></li>
+						<li><a href="/Screens/games.html">Games</a></li>
 					</ul>
 				</div>
+				<img
+					src="/Ressources/Images/menu-btn.png"
+					alt="menu burger"
+					class="menu-burger"
+				/>
 			</nav>
 		</header>
 		<main>
@@ -39,12 +47,48 @@
 						src="https://cdn.pixabay.com/photo/2017/07/10/23/45/cubes-2492010_960_720.jpg"
 					/>
 					<p class="article1-content">
-						Un nouveau rapport a identifié que JavaScript n’est plus en tête de liste des langages de programmation les plus populaires au monde. Selon le rapport 2022 State of Software Delivery de CircleCI, le TypeScript a désormais dépassé JavaScript à la première place, détrônant l’un des plus grands noms du secteur.</p>
-					<p> Selon l’entreprise, ce changement est probablement dû à ses fonctionnalités conviviales pour les développeurs, qui leur permettent notamment de trouver les petites erreurs localement et de valider le code plus fréquemment qu’avec JavaScript.</p>
-					<p>De 2019 à 2021, seul Python est resté constant dans sa popularité selon le rapport, qui place le langage à la quatrième place. Les autres langages du top 10 sont notamment HTML, Java et PHP.</p>
-					<p>Plus bas dans la liste, HashiCorp (HCL) a fait son entrée dans le top 10, à une respectable 9e place, ouvrant la voie à HTML et Swift, qui se retrouvent respectivement à une et deux places derrière.</p>
-					<p>« Les équipes de développement logiciel adoptent des outils et des pratiques conviviaux pour les développeurs, qui leur permettent d’automatiser, de faire évoluer et d’adopter avec succès le changement lorsque cela est nécessaire», a noté Michael Stahnke, vice-président de la plateforme chez CircleCI. « Les équipes les plus performantes gravitent autour d’outils qui encouragent la collaboration, la répétabilité et la productivité».</p>
-					<p>L’analyse a également porté sur d’autres aspects du flux de travail des développeurs et a permis de découvrir quatre benchmarks clés qui définissent certaines des équipes d’ingénierie les plus performantes. Il s’agit notamment de la durée moyenne du flux de travail, qui se situe entre 5 et 10 minutes, de la réparation ou de la reprise des exécutions ratées dans un délai d’une heure, d’un taux de réussite d’au moins 90 % pour la branche par défaut de leur application et du déploiement régulier, conformément aux exigences de l’entreprise, au moins une fois par jour.</p>
+						Un nouveau rapport a identifié que JavaScript n’est plus en tête de
+						liste des langages de programmation les plus populaires au monde.
+						Selon le rapport 2022 State of Software Delivery de CircleCI, le
+						TypeScript a désormais dépassé JavaScript à la première place,
+						détrônant l’un des plus grands noms du secteur.
+					</p>
+					<p>
+						Selon l’entreprise, ce changement est probablement dû à ses
+						fonctionnalités conviviales pour les développeurs, qui leur
+						permettent notamment de trouver les petites erreurs localement et de
+						valider le code plus fréquemment qu’avec JavaScript.
+					</p>
+					<p>
+						De 2019 à 2021, seul Python est resté constant dans sa popularité
+						selon le rapport, qui place le langage à la quatrième place. Les
+						autres langages du top 10 sont notamment HTML, Java et PHP.
+					</p>
+					<p>
+						Plus bas dans la liste, HashiCorp (HCL) a fait son entrée dans le
+						top 10, à une respectable 9e place, ouvrant la voie à HTML et Swift,
+						qui se retrouvent respectivement à une et deux places derrière.
+					</p>
+					<p>
+						« Les équipes de développement logiciel adoptent des outils et des
+						pratiques conviviaux pour les développeurs, qui leur permettent
+						d’automatiser, de faire évoluer et d’adopter avec succès le
+						changement lorsque cela est nécessaire», a noté Michael Stahnke,
+						vice-président de la plateforme chez CircleCI. « Les équipes les
+						plus performantes gravitent autour d’outils qui encouragent la
+						collaboration, la répétabilité et la productivité».
+					</p>
+					<p>
+						L’analyse a également porté sur d’autres aspects du flux de travail
+						des développeurs et a permis de découvrir quatre benchmarks clés qui
+						définissent certaines des équipes d’ingénierie les plus
+						performantes. Il s’agit notamment de la durée moyenne du flux de
+						travail, qui se situe entre 5 et 10 minutes, de la réparation ou de
+						la reprise des exécutions ratées dans un délai d’une heure, d’un
+						taux de réussite d’au moins 90 % pour la branche par défaut de leur
+						application et du déploiement régulier, conformément aux exigences
+						de l’entreprise, au moins une fois par jour.
+					</p>
 				</div>
 			</div>
 			<section class="mobile-slideshow custom-scrollbar">

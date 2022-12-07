@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>All4tech Homepage</title>
+		<link rel="stylesheet" href="/Styles/style-navbar.css" />
 		<link rel="stylesheet" href="/Styles/style.css" />
 		<link
 			rel="stylesheet"
@@ -15,35 +16,42 @@
 
 	<body>
 		<header>
-			<nav>
-				<img src="Ressources/Images/all4tech_1.png" id="logo" />
-				<div class="dropdown">
-					<button class="dropbtn">
-						<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
-					</button>
-
-					<ul class="dropdown-content">
-						<li><a href="#"></a>section1</li>
-						<li><a href="#"></a>section2</li>
-						<li><a href="#"></a>section3</li>
-						<li><a href="#"></a>section4</li>
-						<li><a href="#"></a>section5</li>
+			<nav class="navbar">
+				<a href="index.html">
+					<img
+						src="/Ressources/Images/all4tech_1.png"
+						alt="logo"
+						class="logo"
+					/>
+				</a>
+				<div class="nav-links">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="/Screens/programming.html">Programming</a></li>
+						<li><a href="/Screens/hardware.html">Hardware</a></li>
+						<li><a href="/Screens/business.html">Business</a></li>
+						<li><a href="/Screens/games.html">Games</a></li>
 					</ul>
 				</div>
+				<img
+					src="/Ressources/Images/menu-btn.png"
+					alt="menu burger"
+					class="menu-burger"
+				/>
 			</nav>
 		</header>
 		<main>
 			<section class="image-hover">
-				<div class="main-article">
+				<div class="home-main-article">
 					<img
 						class="recent-img"
 						id="main-img"
 						src="/Ressources/balloons.jpg"
 						alt="Hot air balloon"
 					/>
-					<article class="main-article-content">
-						<h1 class="main-article-title">Ipsum</h1>
-						<p class="main-article-text">
+					<article class="home-main-article-content">
+						<h1 class="home-main-article-title">Ipsum</h1>
+						<p class="home-main-article-text">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
 							Reprehenderit ab suscipit, voluptatem amet consectetur, ut tenetur
 							sit consequatur odio repudiandae quisquam sed animi pariatur!
@@ -53,11 +61,11 @@
 				</div>
 			</section>
 			<h2 class="title-recent">Recent</h2>
-			<section>
+			<section id="recent-article">
 				<div class="card">
 					<img
 						class="recent-img"
-						src="/Ressources/balloons.jpg"
+						src="/Ressources/Images/composant.jpg"
 						alt="Hot air balloons"
 					/>
 					<h2 class="card-title">Title</h2>
@@ -65,7 +73,7 @@
 				<div class="card">
 					<img
 						class="recent-img"
-						src="/Ressources/balloons.jpg"
+						src="/Ressources/Images/composant.jpg"
 						alt="Hot air balloons"
 					/>
 					<h2 class="card-title">Title</h2>
@@ -73,7 +81,7 @@
 				<div class="card">
 					<img
 						class="recent-img"
-						src="/Ressources/balloons.jpg"
+						src="/Ressources/Images/composant.jpg"
 						alt="Hot air balloons"
 					/>
 					<h2 class="card-title">Title</h2>
@@ -82,37 +90,32 @@
 			<section id="carrousel">
 				<article>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolore
-					dolorum fugit iste similique blanditiis amet. Fuga voluptatum delectus
-					perferendis ut commodi a doloribus repellat similique optio dolor.
-					Amet, minima.
+					dolorum fugit iste similique blanditiis amet.
 				</article>
 				<article>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-					deserunt, at eligendi rem ducimus assumenda cupiditate libero? At quis
-					incidunt vitae molestiae voluptatibus eaque, sequi temporibus
-					exercitationem, quaerat eius est.
+					deserunt, at eligendi rem ducimus assumenda cupiditate libero?
 				</article>
 				<article>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi id
-					commodi ipsa ad obcaecati recusandae eaque quibusdam dolorem placeat
-					quos totam, assumenda, ducimus ex doloremque soluta optio, ipsum
-					repudiandae provident.
+					commodi ipsa ad obcaecati
 				</article>
 				<article>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-					voluptatibus voluptatem. Quod perspiciatis debitis assumenda et nisi
-					nobis, aliquid deserunt vel hic odit! At maxime aliquam iusto! Minima,
-					perspiciatis mollitia?
+					voluptatibus voluptatem.
 				</article>
 				<article>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse a
 					voluptate recusandae commodi ut expedita, harum debitis excepturi
-					molestias temporibus, libero voluptatum accusantium alias ullam id
-					praesentium? Aliquam, neque vitae!
 				</article>
 			</section>
-			<section>
-				<div class="article-random"></div>
+			<section id="random-mostRead">
+				<div class="article-random">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis vero
+					atque excepturi! Aspernatur quis tempora pariatur dolorem. Provident
+					quisquam aliquid culpa fugit ut aut voluptas quis molestiae incidunt
+					velit! Eaque?
+				</div>
 				<div class="most-read">
 					<ul>
 						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>

@@ -34,6 +34,7 @@ header {
 }
 
 .navbar a {
+	position: relative;
 	color: #fff;
 	font-size: 1.1rem;
 	/* font-weight: 200; */
@@ -73,7 +74,7 @@ footer {
 	justify-content: space-around;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
 	.navbar {
 		padding: 0;
 	}

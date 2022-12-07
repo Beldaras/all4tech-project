@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="/Styles/stylecategory.css" />
+		<link rel="stylesheet" href="/Styles/style.css" />
+		<link rel="stylesheet" href="/Styles/style-navbar.css" />
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
@@ -14,26 +15,33 @@
 	</head>
 	<body>
 		<header>
-			<nav>
-				<img src="../Ressources/Images/all4tech_1.png" id="logo" />
-				<div class="dropdown">
-					<button class="dropbtn">
-						<i class="fa fa-bars fa-3x" aria-hidden="true"></i>
-					</button>
-					<ul class="dropdown-content">
-						<li><a href="#"></a>section1</li>
-						<li><a href="#"></a>section2</li>
-						<li><a href="#"></a>section3</li>
-						<li><a href="#"></a>section4</li>
-						<li><a href="#"></a>section5</li>
+			<nav class="navbar">
+				<a href="index.html">
+					<img
+						src="/Ressources/Images/all4tech_1.png"
+						alt="logo"
+						class="logo"
+					/>
+				</a>
+				<div class="nav-links">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="/Screens/programming.html">Programming</a></li>
+						<li><a href="/Screens/hardware.html">Hardware</a></li>
+						<li><a href="/Screens/business.html">Business</a></li>
+						<li class="active"><a href="/Screens/games.html">Games</a></li>
 					</ul>
 				</div>
+				<img
+					src="/Ressources/Images/menu-btn.png"
+					alt="menu burger"
+					class="menu-burger"
+				/>
 			</nav>
 		</header>
-
-        <main>
+		<main class="category-main">
 			<h1 class="category-title">CATEGORY TITLE</h1>
-            <section class="categories">
+			<section class="categories">
 				<div class="category-card">
 					<img
 						class="category-X-img"
@@ -59,8 +67,8 @@
 					<h2 class="category-card-title">A great title for a great article</h2>
 				</div>
 			</section>
-        </main>
-        <footer>
+		</main>
+		<footer>
 			<p><a href="#alltech">© All4Tech 2022</a></p>
 			<p><a href="#">About</a></p>
 			<p><a href="#">Github Repo</a></p>

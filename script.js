@@ -14,7 +14,7 @@ menuBurger.addEventListener('click', () => {
 	}
 });
 
-/* Mobile slideshos */
+Mobile slideshos
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -23,7 +23,7 @@ function plusDivs(n) {
 	showDivs((slideIndex += n));
 }
 
-function showDivs(n) {
+/* function showDivs(n) {
 	var i;
 	var x = document.getElementsByClassName('slideshow');
 	if (n > x.length) {
@@ -35,8 +35,7 @@ function showDivs(n) {
 	for (i = 0; i < x.length; i++) {
 		x[i].style.display = 'none';
 	}
-	x[slideIndex - 1].style.display = 'block';
-}
+/* 	x[slideIndex - 1].style.display = 'block'; */
 
 // var slideIndex = 1;
 // showDivs(slideIndex);
@@ -76,4 +75,6 @@ prevButton.addEventListener('click', () => {
 	const slideWidth = slide.clientWidth;
 	slidesContainer.scrollLeft -= slideWidth;
 });
+
+
 

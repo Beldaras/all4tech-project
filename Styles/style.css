@@ -28,8 +28,6 @@ html {
 	margin: 0;
 	padding: 0;
 	background-color: rgba(237, 237, 248, 0.1);
-	
-
 }
 
 main {
@@ -211,7 +209,6 @@ a {
 		rgba(0, 0, 0, 0.23) 0px 3px 6px;
 	margin: 0 0 calc(2 * var(--spacing)) 0;
 	max-width: 311px;
-	
 }
 
 .hidden-cards {
@@ -238,7 +235,6 @@ a {
 }
 
 @media screen and (min-width: 600px) {
-
 	header {
 		height: 9.625rem;
 	}
@@ -255,7 +251,6 @@ a {
 		background-repeat: no-repeat;
 	}
 
-
 	main {
 		display: flex;
 		flex-direction: column;
@@ -268,7 +263,6 @@ a {
 	section {
 		position: relative;
 	}
-
 
 	/* home main article */
 
@@ -398,7 +392,7 @@ a {
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		width:100%;
+		width: 100%;
 	}
 
 	.head {
@@ -412,14 +406,11 @@ a {
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-	
+
 	.image-main-article-desktop {
-
 		width: 70%;
-
 	}
 
-	
 	.main-article-title {
 		padding: 1rem;
 		text-align: left;
@@ -431,7 +422,6 @@ a {
 	}
 
 	.main-image {
-
 		margin: 0 15%;
 		display: flex;
 		flex-direction: row;
@@ -474,7 +464,6 @@ a {
 		font-size: 1.2rem;
 		font-family: var(--font-content);
 	}
-
 
 	/* carousel */
 
@@ -544,7 +533,10 @@ a {
 	}
 
 	.slide:nth-child(1) {
-		background-color: #49b293;
+		/* background-color: #49b293; */
+		background-image: url(/Ressources/Images/gaming.jpg);
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.slide:nth-child(2) {
@@ -560,41 +552,38 @@ a {
 		background-color: #da6f2b;
 	}
 
-
-
-
 	/* Categories pages desktop */
 
-.categories {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-	margin: calc(2*var(--spacing)) calc(var(--spacing))
+	.categories {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin: calc(2 * var(--spacing)) calc(var(--spacing));
+	}
 
-}
+	.category-title {
+		margin: calc(3 * var(--spacing)) calc(3 * var(--spacing)) 0
+			calc(3 * var(--spacing));
+	}
 
-.category-title {
-	margin: calc(3*var(--spacing)) calc(3* var(--spacing)) 0 calc(3*var(--spacing)) ;
-}
+	.category-X-img {
+		width: 400px;
+		height: 400px;
+	}
 
+	.hidden-cards {
+		visibility: visible;
+		margin-top: calc(2.5 * var(--spacing));
+		display: flex;
+	}
 
-.category-X-img {
-	width: 400px;
-	height: 400px;
-}
+	.category-card {
+		max-width: none;
+	}
 
-.hidden-cards {
-	visibility: visible;
-	margin-top:  calc(2.5* var(--spacing));
-	display: flex;
-}
-
-.category-card {
-
-	max-width: none;
-	
-
-}
-
+	footer {
+		/* position: fixed; */
+		width: 100%;
+	}
 }

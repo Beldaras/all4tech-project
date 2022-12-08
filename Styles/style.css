@@ -28,6 +28,13 @@ html {
 	margin: 0;
 	padding: 0;
 	background-color: rgba(237, 237, 248, 0.1);
+	
+
+}
+
+body {
+	display: flex;
+	flex-direction: column;
 }
 
 main {
@@ -554,36 +561,49 @@ a {
 
 	/* Categories pages desktop */
 
-	.categories {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
-		margin: calc(2 * var(--spacing)) calc(var(--spacing));
-	}
+.categories {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	width: 100%;
 
-	.category-title {
-		margin: calc(3 * var(--spacing)) calc(3 * var(--spacing)) 0
-			calc(3 * var(--spacing));
-	}
+}
 
-	.category-X-img {
-		width: 400px;
-		height: 400px;
-	}
+.category-title {
+	margin: calc(3*var(--spacing)) 0 calc(3*var(--spacing)) ;
+}
 
-	.hidden-cards {
-		visibility: visible;
-		margin-top: calc(2.5 * var(--spacing));
-		display: flex;
-	}
 
-	.category-card {
-		max-width: none;
-	}
+.category-X-img {
+	width: 400px;
+	height: 400px;
+}
 
-	footer {
-		/* position: fixed; */
-		width: 100%;
-	}
+.hidden-cards {
+	visibility: visible;
+	margin-top:  calc(2.5* var(--spacing));
+	display: flex;
+}
+
+.category-card {
+
+	max-width: none;
+	
+
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+}
+
+
+/* GAMES */
+
+
+  
+  
+  
+  
 }

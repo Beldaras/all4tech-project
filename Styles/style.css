@@ -223,9 +223,13 @@ a {
 	box-shadow: var(--background-article) 0px 3px 6px,
 		rgba(0, 0, 0, 0.23) 0px 3px 6px;
 	margin: 0 0 calc(2 * var(--spacing)) 0;
+
+	max-width: 311px;
+
 	transform-origin: center;
   	transition: all 0.4s ease-in-out;
   	overflow: hidden;	
+
 }
 
 figure {
@@ -308,7 +312,6 @@ transition: all 0.3s;
 
 
 @media screen and (min-width: 600px) {
-
 	header {
 		height: 9.625rem;
 	}
@@ -325,7 +328,6 @@ transition: all 0.3s;
 		background-repeat: no-repeat;
 	}
 
-
 	main {
 		display: flex;
 		flex-direction: column;
@@ -338,7 +340,6 @@ transition: all 0.3s;
 	section {
 		position: relative;
 	}
-
 
 	/* home main article */
 
@@ -470,7 +471,7 @@ transition: all 0.3s;
 		display: flex;
 		flex-direction: column;
 		align-content: center;
-		width:100%;
+		width: 100%;
 	}
 
 	.head {
@@ -484,14 +485,11 @@ transition: all 0.3s;
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-	
+
 	.image-main-article-desktop {
-
 		width: 70%;
-
 	}
 
-	
 	.main-article-title {
 		padding: 1rem;
 		text-align: left;
@@ -503,7 +501,6 @@ transition: all 0.3s;
 	}
 
 	.main-image {
-
 		margin: 0 15%;
 		display: flex;
 		flex-direction: row;
@@ -546,7 +543,6 @@ transition: all 0.3s;
 		font-size: 1.2rem;
 		font-family: var(--font-content);
 	}
-
 
 	/* carousel */
 
@@ -616,7 +612,10 @@ transition: all 0.3s;
 	}
 
 	.slide:nth-child(1) {
-		background-color: #49b293;
+		/* background-color: #49b293; */
+		background-image: url(/Ressources/Images/gaming.jpg);
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.slide:nth-child(2) {
@@ -631,9 +630,6 @@ transition: all 0.3s;
 	.slide:nth-child(4) {
 		background-color: #da6f2b;
 	}
-
-
-
 
 	/* Categories pages desktop */
 
@@ -678,4 +674,12 @@ footer {
 	width: 100%;
 }
 
+
+/* GAMES */
+
+
+  
+  
+  
+  
 }

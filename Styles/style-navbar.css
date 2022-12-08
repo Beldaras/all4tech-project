@@ -41,7 +41,6 @@ header {
 }
 
 .navbar a {
-
 	position: relative;
 
 	color: black;
@@ -91,13 +90,14 @@ footer {
 
 	.navbar .logo {
 		/* position: absolute; */
+		padding: 5px;
 		top: 30px;
 		left: 30px;
 	}
 
 	.navbar .menu-burger {
 		display: block;
-		top: 80px;
+		top: 7%;
 	}
 	.nav-links {
 		top: 0;
@@ -128,5 +128,6 @@ footer {
 	.navbar .nav-links ul li {
 		margin: 28px 0;
 		font-size: 1.1em;
+		font-weight: 700;
 	}
 }

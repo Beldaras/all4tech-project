@@ -2,13 +2,14 @@
 
 const menuBurger = document.querySelector('.menu-burger');
 const navLinks = document.querySelector('.nav-links');
-const openBtn = '/Ressources/Images/menu-btn.png';
-const closeBtn = '/Ressources/Images/close-menu-btn.png';
+const openBtn = '/Ressources/Images/menu-btn-black.png';
+const closeBtn = '/Ressources/Images/close-menu-btn-black.png';
 
 menuBurger.addEventListener('click', () => {
 	navLinks.classList.toggle('mobile-menu');
 	if ([...navLinks.classList].includes('mobile-menu')) {
-		document.querySelector('.menu-burger').src = closeBtn;
+		document.querySelector('.menu-burger').src = closeBtn;	
+			
 	} else {
 		document.querySelector('.menu-burger').src = openBtn;
 	}

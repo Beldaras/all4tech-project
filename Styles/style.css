@@ -41,6 +41,14 @@ main {
 	margin: calc(2 * var(--spacing)) 0;
 }
 
+
+.main-image-fixed {
+	width: 50%;
+}
+
+.home-main-article-text {
+	display: none;
+}
 /* mobile article */
 
 .article1 {
@@ -132,6 +140,13 @@ a[href*='alltech'] {
 }
 
 /* mobile-home */
+.color-link {
+	text-decoration: none;
+}
+
+.home-main-article-title {
+	color:#272932;
+}
 
 .test-fix {
 	margin: 0 1rem;
@@ -150,8 +165,8 @@ a[href*='alltech'] {
 	margin: 0.6rem;
 }
 
-.main-article img {
-	height: 25rem;
+#main-img {
+	width:100%
 }
 
 .main-article-text {
@@ -373,10 +388,13 @@ transition: all 0.3s;
         order: 1;
         justify-content: center;
         width: 90%;
-        height: 40rem;
         margin: 1rem;
         align-self: center;
     }
+
+	.home-main-article-title {
+		color: white;
+	}
     .main-article {
         display: flex;
         flex-direction: column;
@@ -384,12 +402,14 @@ transition: all 0.3s;
         width: 100%;
         height: 100%;
         align-self: center;
+		margin: 2rem 0;
     }
     .home-main-article {
         display: flex;
         width: 100%;
         height: 100%;
-        position: relative; 
+		position: relative; 
+
     }
     .home-main-article-content {
         position: absolute;
@@ -409,13 +429,14 @@ transition: all 0.3s;
         opacity: 1;
     }
     #main-img {
-        display: flex;
         width: 100%;
-        height: 100%;
+		height: auto;
+		aspect-ratio: 16/8;
     }
     .home-main-article-title {
         font-size: 5rem;
         text-align: center;
+		width: 100%;
     }
     .home-main-article-text {
         font-size: 1.5rem;
@@ -425,8 +446,11 @@ transition: all 0.3s;
     /* recent article section */
     .title-recent {
         align-self: start;
-        margin: 0 0 0.5rem 7rem;
-        font-size: 3rem;
+        margin: 3rem 0 0.5rem 5% ;
+        font-size: 1.25rem;
+		color: var(--title-color);
+		font-family: var(--font-content);
+		font-weight: lighter;
     }
     #recent-article {
         display: flex;
@@ -439,7 +463,8 @@ transition: all 0.3s;
     }
     .recent-img {
         width: 100%;
-        height: 15rem;
+		height: 15rem;
+
     }
     /*Random and most read articles section */
     #random-mostRead {
@@ -788,6 +813,10 @@ transition: all 0.3s;
 }
 .resultat {
     justify-self: center;
+}
+
+.home-main-article-text {
+	display: inherit;
 }
 
 }

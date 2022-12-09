@@ -652,7 +652,7 @@ transition: all 0.3s;
         width: 100%;
         object-fit: cover;
     }
-    }
+
     .slide:nth-child(3) {
         background-image: url('/Ressources/Images/carrousel2.png');
         background-position: center;
@@ -753,4 +753,6 @@ transition: all 0.3s;
 }
 .resultat {
 	justify-self: center;
+}
+
 }

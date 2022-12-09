@@ -1,19 +1,13 @@
 // Fonction du jeu
 
-const getUserChoice = (userInput) => {
-	const randomNumber = Math.floor(Math.random() * 3);
-	switch (randomNumber) {
-		case 0:
-			return 'rock';
-			break;
-		case 1:
-			return 'paper';
-			break;
-		case 2:
-			return 'scissors';
-			break;
+const getUserChoice = userInput => { 
+	userInput = userInput.toLowerCase();
+	if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors'){
+	  return userInput
+	} else {
+	  console.log('Error');
 	}
-};
+  }
 
 const getComputerChoice = () => {
 	const randomNumber = Math.floor(Math.random() * 3);
@@ -37,6 +31,7 @@ const determineWinner = (userChoice, computerChoice) => {
 	if (userChoice === 'rock') {
 		if (computerChoice === 'paper') {
 			return 'The computer won!';
+
 		} else {
 			return 'You won!';
 		}
@@ -58,8 +53,8 @@ const determineWinner = (userChoice, computerChoice) => {
 	}
 };
 
-const playGame = () => {
-	const userChoice = getUserChoice();
+const playGame = (param) => {
+	const userChoice = getUserChoice(param);
 	const computerChoice = getComputerChoice();
 	console.log(`You threw: ${userChoice}`);
 	console.log(`The computer threw: ${computerChoice}`);
@@ -73,32 +68,38 @@ const playGame = () => {
 
 // method recuperation du jeu vers bouton
 
-document
-	.querySelector('.mini-game-button')
-	.addEventListener('click', function () {
-		console.log('click');
+document.querySelector(".mini-game-button").addEventListener('click', function () {
+    
 
-		// DOM
+	const value = document.getElementById("input-game").value
+	console.log(value)
+	
 
-		const body = document.querySelector('.result-game');
-		const user = document.createElement('div');
-		const computer = document.createElement('div');
-		const resultat = document.createElement('div');
+// DOM
 
-		user.classList.add('user');
-		computer.classList.add('computer');
+	const body = document.querySelector('.result-game');
+	const user = document.createElement('div');
+	const computer = document.createElement('div');
+	const resultat = document.createElement('div');
 
-		const result = playGame();
+	user.classList.add('user');
+	computer.classList.add('computer');
+	resultat.classList.add('resultat');
 
-		body.innerHTML = '';
+	const result = playGame(value);
 
-		user.textContent = `${result[1]}`;
+	body.innerHTML = '';
 
-		computer.textContent = `${result[2]}`;
+	user.textContent = `${result[1]}`;
 
-		resultat.textContent = `${result[0]}`;
+	computer.textContent = `${result[2]}`;
 
-		body.appendChild(user);
-		body.appendChild(computer);
-		body.appendChild(resultat);
-	});
+	resultat.textContent = `${result[0]}`;
+
+	body.appendChild(user);
+	body.appendChild(computer);
+	body.appendChild(resultat);
+
+});
+
+

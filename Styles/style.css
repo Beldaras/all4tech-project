@@ -319,6 +319,13 @@ transition: all 0.3s;
 }
 
 
+  @media (min-width: 768px) {
+    .mini-game-button {
+      padding: 0.25em 0.75em;
+    }
+
+  }
+
 @media screen and (min-width: 600px) {
 	header {
 		height: 9.625rem;
@@ -697,3 +704,48 @@ transition: all 0.3s;
 
 
 /* GAMES */
+
+.mini-game-button {
+	font-family: var(--font-content);
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	height:5rem;
+	width: 20%;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	cursor: pointer;
+	border: 3px solid;
+	padding: 0.25em 0.5em;
+	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+  }
+  .mini-game-button:active {
+	box-shadow: 0px 0px 0px 0px;
+	top: 5px;
+	left: 5px;
+  }
+.result-game {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	margin: 5rem;
+	font-size: 2rem;
+	box-shadow: var(--background-article) 0px 3px 6px,
+		rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	padding: 2rem;
+}
+.user, .resultat, .computer {
+	margin: 5rem;
+	font-size: 2rem;
+	box-shadow: var(--background-article) 0px 3px 6px,
+		rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	padding: 2rem;
+}
+.resultat {
+	justify-self: center;
+}

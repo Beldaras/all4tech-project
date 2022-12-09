@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link rel="stylesheet" href="/Styles/style-navbar.css" />
-		<link rel="stylesheet" href="/Styles/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
-			crossorigin="anonymous"
-		/>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>All4tech Games</title>
-	</head>
-	<body id="body-game">
-		<header>
-			<nav class="navbar">
-				<a href="index.html">
-					<img
-						src="/Ressources/Images/all4tech_1.png"
-						alt="logo"
-						class="logo"
-					/>
-				</a>
-				<div class="nav-links">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="/Screens/programming.html">Programming</a></li>
-						<li><a href="/Screens/hardware.html">Hardware</a></li>
-						<li class="active">
-							<a href="/Screens/business.html">Business</a>
-						</li>
-						<li><a href="/Screens/games.html">Games</a></li>
-					</ul>
-				</div>
-				<img
-					src="/Ressources/Images/menu-btn-black.png"
-					alt="menu burger"
-					class="menu-burger"
-				/>
-			</nav>
-		</header>
-		<main class="mini-game">
-			<button class="mini-game-button">CHIFOUMI</button>
-			<div class="result-game"></div>
-		</main>
-		<footer>
-			<p><a href="#alltech">© All4Tech 2022</a></p>
-			<p><a href="#">About</a></p>
-			<p><a href="#">Github Repo</a></p>
-			<p><a href="#">Contact</a></p>
-		</footer>
-		<script src="../game.js"></script>
-	</body>
+    <head>
+        <link rel="stylesheet" href="/Styles/style-navbar.css" />
+        <link rel="stylesheet" href="/Styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+            crossorigin="anonymous"
+        />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>All4tech Games</title>
+    </head>
+    <body id="body-game">
+        <header>
+            <nav class="navbar">
+                <a href="/">
+                    <img
+                        src="/Ressources/Images/all4tech_1.png"
+                        alt="logo"
+                        class="logo"
+                    />
+                </a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Screens/programming.html">Programming</a></li>
+                        <li><a href="/Screens/hardware.html">Hardware</a></li>
+                        <li class="active">
+                            <a href="/Screens/business.html">Business</a>
+                        </li>
+                        <li><a href="/Screens/games.html">Games</a></li>
+                    </ul>
+                </div>
+                <img
+                    src="/Ressources/Images/menu-btn-black.png"
+                    alt="menu burger"
+                    class="menu-burger"
+                />
+            </nav>
+        </header>
+        <div class="mini-game">
+            <div class="result-game"></div>
+                <input type="text" value="" id="input-game" placeholder="Enter Rock, Paper or Scissors" >
+                <button type="submit" class="mini-game-button">CHIFOUMI</button>
+        </div>
+        </main>
+        <footer>
+            <p><a href="#alltech">© All4Tech 2022</a></p>
+            <p><a href="#">About</a></p>
+            <p><a href="#">Github Repo</a></p>
+            <p><a href="#">Contact</a></p>
+        </footer>
+        <script src="../game.js"></script>
+    </body>
 </html>

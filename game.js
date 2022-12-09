@@ -1,5 +1,4 @@
 // Fonction du jeu
-
 const getUserChoice = userInput => {
     userInput = userInput.toLowerCase();
     if(userInput === 'rock' || userInput === 'paper' || userInput === 'scissors'){
@@ -71,10 +70,21 @@ document.querySelector(".mini-game-button").addEventListener('click', function (
     user.classList.add('user');
     computer.classList.add('computer');
     resultat.classList.add('resultat');
+    user.style.color = '#191970';
+    computer.style.color = '#8B4513';
     const result = playGame(value);
     body.innerHTML = '';
     user.textContent = `${result[1]}`;
     computer.textContent = `${result[2]}`;
+    if(result[0].includes("computer")) {
+        resultat.style.color = '#FF0000';
+    }
+    if(result[0].includes("You")) {
+        resultat.style.color = '#2E8B57';
+    }
+    if(result[0].includes("tie")) {
+        resultat.style.color = '#FF8C00';
+    }
     resultat.textContent = `${result[0]}`;
     body.appendChild(user);
     body.appendChild(computer);

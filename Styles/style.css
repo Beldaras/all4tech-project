@@ -315,66 +315,6 @@ transition: all 0.3s;
 }
 
 
-.mini-game-button {
-	font-family: var(--font-content);
-	font-size: 1.5rem;
-	letter-spacing: 2px;
-	height:5rem;
-	width: 20%;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: #000;
-	cursor: pointer;
-	border: 3px solid;
-	padding: 0.25em 0.5em;
-	box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-	position: relative;
-	user-select: none;
-	-webkit-user-select: none;
-	touch-action: manipulation;
-  }
-  
-  .mini-game-button:active {
-	box-shadow: 0px 0px 0px 0px;
-	top: 5px;
-	left: 5px;
-  }
-
-
-
-.result-game {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 100%;
-	margin: 5rem;
-	font-size: 2rem;
-	box-shadow: var(--background-article) 0px 3px 6px,
-		rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	padding: 2rem;
-} 
-
-.user, .resultat, .computer {
-	margin: 5rem;
-	font-size: 2rem;
-	box-shadow: var(--background-article) 0px 3px 6px,
-		rgba(0, 0, 0, 0.23) 0px 3px 6px;
-	padding: 2rem;
-}
-
-.resultat {
-	justify-self: center;
-}
-
-
-  @media (min-width: 768px) {
-	.mini-game-button {
-	  padding: 0.25em 0.75em;
-	}
-  }
-
-
-
 @media screen and (min-width: 600px) {
 	header {
 		height: 9.625rem;
@@ -578,7 +518,7 @@ transition: all 0.3s;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		background-image: url(/Ressources/Images/carrousel4.png);
+		background-image: url(/Ressources/Images/category.jpg);
 		width: 70%;
 		height: 12rem;
 		margin: 0 auto;
@@ -602,16 +542,6 @@ transition: all 0.3s;
 		width: 80%;
 		height: auto;
 		margin: 0 auto;
-
-	}
-
-	#main-article-link:hover {
-		color: #20b2aa;
-	}
-
-	#main-article-link {
-		text-decoration: none;
-		color: black;
 	}
 
 	.main-image {
@@ -727,30 +657,22 @@ transition: all 0.3s;
 
 	.slide:nth-child(1) {
 		/* background-color: #49b293; */
-		background-image: url('/Ressources/Images/carrousel5.png');
-		background-position: center;
+		background-image: url(/Ressources/Images/gaming.jpg);
 		width: 100%;
 		object-fit: cover;
 	}
 
 	.slide:nth-child(2) {
-		
-		background-image: url('/Ressources/Images/carrousel1.png');
-		background-position: center;
-		width: 100%;
-		object-fit: cover;
-	}
-			
+		background-color: #b03532;
 	}
 
 	.slide:nth-child(3) {
-		background-image: url('/Ressources/Images/carrousel2.png');
-		background-position: center;
+		background-color: #6a478f;
+		margin: 0;
 	}
 
 	.slide:nth-child(4) {
-		background-image: url('/Ressources/Images/carrousel.png');
-		background-position: center;
+		background-color: #da6f2b;
 	}
 
 	/* Categories pages desktop */
@@ -804,6 +726,11 @@ footer {
 }
 
 
+/* GAMES */
 
+
+  
+  
+  
   
 }

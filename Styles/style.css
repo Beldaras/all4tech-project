@@ -447,11 +447,12 @@ transition: all 0.3s;
         display: flex;
         justify-content: space-between;
         width: 60%;
-        height: 100%;
+        height: 60%;
     }
     .article-random img {
         width: 60%;
-        height: 100%;
+        height: 60%;
+		align-self: center;
     }
     .article-random-text {
         display: flex;
@@ -640,12 +641,14 @@ transition: all 0.3s;
         /* background-color: #49B293; */
         background-image: url('/Ressources/Images/carrousel1.png');
         background-position: center;
+		background-repeat: no-repeat;
         width: 100%;
         object-fit: cover;
     }
     .slide:nth-child(2) {
         background-image: url('/Ressources/Images/carrousel5.png');
         background-position: center;
+		background-repeat: no-repeat;
         width: 100%;
         object-fit: cover;
     }
@@ -653,10 +656,12 @@ transition: all 0.3s;
     .slide:nth-child(3) {
         background-image: url('/Ressources/Images/carrousel2.png');
         background-position: center;
+		background-repeat: no-repeat;
     }
     .slide:nth-child(4) {
         background-image: url('/Ressources/Images/carrousel3.png');
         background-position: center;
+		background-repeat: no-repeat;
     }
 
 	/* Categories pages desktop */

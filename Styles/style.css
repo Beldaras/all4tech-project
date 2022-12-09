@@ -133,6 +133,9 @@ a[href*='alltech'] {
 
 /* mobile-home */
 
+.test-fix {
+	margin: 0 1rem;
+}
 
 .main-article {
 	display: flex;
@@ -467,6 +470,7 @@ transition: all 0.3s;
     }
     .article-random-text h2 {
         height: 10%;
+		margin: 1rem 0
     }
     .article-random-text p {
         height: 50%;
@@ -484,6 +488,7 @@ transition: all 0.3s;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+		list-style: initial;
     }
     .most-read li {
         display: flex;

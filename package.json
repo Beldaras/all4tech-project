@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "validate": "html-validator --quiet",
+    "all": "html-validator --quiet"
+  },
+  "type": "module",
+  "devDependencies": {
+    "w3c-html-validator": "^1.2.1"
+  }
+}

@@ -133,6 +133,7 @@ a[href*='alltech'] {
 
 /* mobile-home */
 
+
 .main-article {
 	display: flex;
 	flex-direction: column;
@@ -187,6 +188,10 @@ a {
 }
 
 .most-read {
+	display: none;
+}
+
+#random-mostRead {
 	display: none;
 }
 
